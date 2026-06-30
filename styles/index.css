@@ -48,14 +48,27 @@ form button {
   cursor: pointer;
 }
 
-form button {
+/* form button {
   margin-top: 30px;
   margin-bottom: 20px;
-}
+} */
 
 form button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+.form-footer {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+.form-footer p {
+  margin: 0;
 }
 
 section button.start-btn:hover,

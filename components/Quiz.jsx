@@ -144,8 +144,10 @@ export default function Quiz() {
         <section className="quiz-section">
             <form action={checkAnswers} className="quiz-form">
                 {renderQuestions()}
+                <div className="form-footer">
                 {submitted && <p>Your scored {score}/{questions.length} correct answers</p>}
                 {quizLoaded && <button>{submitted ? "Play again" : "Check answers"}</button>}
+                </div>
             </form>
         </section>
     );
